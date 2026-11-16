@@ -189,7 +189,12 @@ body{font-size:18px}
 /* A slimmer portrait frame gives the hero photograph a more elegant vertical rhythm. */
 .hero-visual{width:min(100%,470px);margin-left:auto;margin-right:28px}
 .hero-photo{height:660px}
-@media(max-width:760px){.hero-visual{width:auto;margin:32px 15px 0 20px}.hero-photo{height:520px}}
+@media(max-width:760px){
+  .hero{padding-top:20px}
+  .hero-visual{order:-1;width:auto;margin:0 15px 0 20px}
+  .hero-copy{margin-top:32px}
+  .hero-photo{height:520px}
+}
 
 /* Match the personal-story portrait to the hero's tall, elegant frame. */
 .about-photo{max-width:470px;margin:0 auto}
